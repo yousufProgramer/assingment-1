@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap css link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Select five bets</title>
+</head>
+<body>
+  <header>
+        <div class="text-header">
+            <h1>Select Your Best Five</h1>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
+            nostrud amet.</p>
+        </div>
+  </header>
+   <main>
+     <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="item">
+            <div class="card "  style="width: 15rem;">
+                <img src="./img/Lionel-Messi-2018.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lionel Messi</h5>
+                  <p class="card-text">36 Goals * 120 Assist</p>
+                  <a href="#" class="btn btn-primary" onclick="slect()">Select</a>
+                </div>
+              </div>
+        </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="item">
+            <div class="card "  style="width: 15rem;">
+                <img src="./img/Mobile_UK_L1_2223_Sanches_Paris.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sanches_Paris</h5>
+                  <p class="card-text">36 Goals * 120 Assist</p>
+                  <a href="#" class="btn btn-primary" id="slect-btn">Select</a>
+                </div>
+              </div>
+        </div>
+        </div>
+
+
+        <div class="col-lg-3">
+          <div class="item">
+            <div class="card "  style="width: 15rem;">
+                <img src="./img/mp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kylian Mbappé</h5>
+                  <p class="card-text">36 Goals 120 Assist</p>
+                  <a href="#" class="btn btn-primary" id="slect-btn">Select</a>
+                </div>
+              </div>
+        </div>
+        </div>
+
+
+        <div class="col-lg-3">
+          <div class="box">
+            <h4 class="text-white mb-3">Selected - V</h4>
+            <div class="ul ">
+              <ol type="1" class="text-white">
+                <li class="mb-2">Lionel Messi</li>
+                <li class="mb-2">Kylian Mbappé</li>
+                <li class="mb-2">Sanches_Paris</li>
+                <li class="mb-2">Lionel Messi</li>
+                <li class="mb-2">Sergio Ramos</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+         <div class="col-lg-3">
+          <div class="item">
+            <div class="card "  style="width: 15rem;">
+                <img src="./img/Lionel-Messi-2018.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lionel Messi</h5>
+                  <p class="card-text">36 Goals * 120 Assist</p>
+                  <a href="#" class="btn btn-primary" id="slect-btn">Select</a>
+                </div>
+              </div>
+        </div>
+        </div>
+
+
+        <div class="col-lg-3">
+          <div class="item">
+            <div class="card "  style="width: 15rem;">
+                <img src="./img/n.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sergio Ramos
+                  </h5>
+                  <p class="card-text">36 Goals 120 Assist</p>
+                  <a href="#" class="btn btn-primary" id="slect-btn">Select</a>
+                </div>
+              </div>
+        </div>
+        </div>
+
+
+        <div class="col-lg-3">
+          <div class="item">
+            <div class="card "  style="width: 15rem;">
+                <img src="./img/mp.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kylian Mbappé</h5>
+                  <p class="card-text">120 Goals 260 Assist</p>
+                  <a href="#" class="btn btn-primary" id="slect-btn">Select</a>
+                </div>
+              </div>
+        </div>
+        </div>
+
+
+        <div class="col-lg-3">
+          <div class="buget">
+            <h4 class="mb-3">Budeget</h4>
+            <label for="number">Per Player</label>
+            <input type="number" placeholder="5000" id="number">
+          </div>
+          <button class="btn btn-primary mb-2">Calculate</button>
+          <p class="text-white">Player Expenses $5000</p>
+          <label for="manager" class="text-white">Manager</label>
+          <input type="number" placeholder="2000" id="manager" class="mb-3"><br>
+          <label for="coach" class="text-white">Coach</label>
+          <input type="number" placeholder="3000" id="coach">
+          <button class="btn btn-primary my-4">Calculate</button>
+        <p class="text-white">Total:<span>10000</span></p>
+        </div>
+        
+        
+
+        <div class="col-lg-3">
+          <div class="item">
+            <div class="card "  style="width: 15rem;">
+                <img src="./img/vitor.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Vítor Machado</h5>
+                  <p class="card-text">36 Goals 120 Assist</p>
+                  <a href="#" class="btn btn-primary" id="slect-btn">Select</a>
+                </div>
+              </div>
+        </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="item">
+            <div class="card "  style="width: 15rem;">
+                <img src="./img/Lionel-Messi-2018.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lionel Messi</h5>
+                  <p class="card-text">36 Goals * 120 Assist</p>
+                  <a href="#" class="btn btn-primary" id="slect-btn">Select</a>
+                </div>
+              </div>
+        </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="item">
+            <div class="card "  style="width: 15rem;">
+                <img src="./img/Mobile_UK_L1_2223_Sanches_Paris.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sanches_Paris</h5>
+                  <p class="card-text">36 Goals * 120 Assist</p>
+                  <a href="#" class="btn btn-primary" id="slect-btn">Select</a>
+                </div>
+              </div>
+        </div>
+        </div>
+
+
+        <div class="col-lg-3">
+          
+        </div> 
+        
+        <div class="col-lg-3">
+          <div class="item">
+            <div class="card "  style="width: 15rem;">
+                <img src="./img/Lionel-Messi-2018.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Lionel Messi</h5>
+                  <p class="card-text">36 Goals * 120 Assist</p>
+                  <a href="#" class="btn btn-primary" id="slect-btn">Select</a>
+                </div>
+              </div>
+        </div>
+        </div>
+
+        <div class="col-lg-3">
+          <div class="item">
+            <div class="card "  style="width: 15rem;">
+                <img src="./img/n.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sergio Ramos
+                  </h5>
+                  <p class="card-text">36 Goals 120 Assist</p>
+                  <a href="#" class="btn btn-primary" id="slect-btn">Select</a>
+                </div>
+              </div>
+        </div>
+        </div>
+
+        
+
+        <div class="col-lg-3">
+          <div class="item">
+            <div class="card "  style="width: 15rem;">
+                <img src="./img/n.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sergio Ramos
+                  </h5>
+                  <p class="card-text">36 Goals 120 Assist</p>
+                  <a href="#" class="btn btn-primary" id="slect-btn">Select</a>
+                </div>
+              </div>
+        </div>
+        </div>
+        <div class="col-lg-3">
+          
+        </div> 
+
+      </div>
+     </div>
+   </main>
+
+   <script src="app.js"></script>
+</body>
+</html>
